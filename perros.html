@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competencia de Perros</title>
+    <link rel="stylesheet" href="perros.css">
+</head>
+<body>
+    <header>
+        <h1>Competencia de Perros</h1>
+    </header>
+    <main>
+        <form id="formPerros">
+            <h2>Ingrese las razas de los perros ganadores:</h2>
+
+            <label for="raza1">Puesto 1:</label>
+            <input type="text" id="raza1" name="raza1" placeholder="Ejemplo: Labrador" required>
+
+            <label for="raza2">Puesto 2:</label>
+            <input type="text" id="raza2" name="raza2" placeholder="Ejemplo: Golden Retriever" required>
+
+            <label for="raza3">Puesto 3:</label>
+            <input type="text" id="raza3" name="raza3" placeholder="Ejemplo: Bulldog" required>
+
+            <button type="button" onclick="mostrarResultados()">Mostrar Resultados</button>
+        </form>
+
+        <div id="resultados"></div>
+    </main>
+    <main>
+        <div class="volver">
+            <a href="index.html">
+                <button class="btn-volver">Volver a la Página Principal</button>
+            </a>
+    <script src="perros.js"></script>
+</body>
+</html>

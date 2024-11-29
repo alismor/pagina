@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Preguntas</title>
+    <link rel="stylesheet" href="./preguntas.css">
+</head>
+<body>
+    <header>
+        <h1>Juego de Preguntas</h1>
+    </header>
+    <main>
+        <div id="preguntas">
+            <form id="quizForm">
+                <p>Pregunta 1: ¿Cuál es la capital de España?</p>
+                <input type="radio" name="q1" value="Madrid" id="q1a1">
+                <label for="q1a1">Madrid</label><br>
+                <input type="radio" name="q1" value="Barcelona" id="q1a2">
+                <label for="q1a2">Barcelona</label><br>
+                <input type="radio" name="q1" value="Valencia" id="q1a3">
+                <label for="q1a3">Valencia</label><br><br>
+
+                <p>Pregunta 2: ¿Cuánto es 5 + 3?</p>
+                <input type="radio" name="q2" value="6" id="q2a1">
+                <label for="q2a1">6</label><br>
+                <input type="radio" name="q2" value="8" id="q2a2">
+                <label for="q2a2">8</label><br>
+                <input type="radio" name="q2" value="9" id="q2a3">
+                <label for="q2a3">9</label><br><br>
+
+                <p>Pregunta 3: ¿Qué planeta es conocido como el planeta rojo?</p>
+                <input type="radio" name="q3" value="Venus" id="q3a1">
+                <label for="q3a1">Venus</label><br>
+                <input type="radio" name="q3" value="Marte" id="q3a2">
+                <label for="q3a2">Marte</label><br>
+                <input type="radio" name="q3" value="Júpiter" id="q3a3">
+                <label for="q3a3">Júpiter</label><br><br>
+
+                <button type="button" onclick="verificarRespuestas()">Enviar Respuestas</button>
+            </form>
+        </div>
+        <div id="resultado"></div>
+    </main>
+    <main>
+        <div class="volver">
+            <a href="index.html">
+                <button class="btn-volver">Volver a la Página Principal</button>
+            </a>
+    <script src="preguntas.js"></script>
+</body>
+</html>
